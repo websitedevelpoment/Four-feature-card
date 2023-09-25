@@ -49,23 +49,6 @@ body {
     margin-top: 5rem
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 117px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
 
 .main-heading-2 {
     margin: 1rem 0 1.5rem;
@@ -110,6 +93,7 @@ body {
     font-weight: 600;
 }
 
+
 .description {
     color: var(--paragraph);
     font-weight: 400;
@@ -136,7 +120,6 @@ img {
 
 .card-3 {
     border-top: 5px solid var(--card-tertiary);
-    margin-top: 5rem;
 }
 
 .card-4 {
@@ -146,4 +129,40 @@ img {
 .middle {
     margin-left: 50px;
     margin-right: 50px;
+}
+
+@media screen and (max-width:540px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        margin-bottom: 4rem;
+    }
+
+    .main-heading,
+    .main-heading-2 {
+        font-size: 3.4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 117px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
 }
