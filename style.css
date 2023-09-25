@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+
+:root {
+    --heading: hsl(234, 12%, 34%);
+    --card-secondary: hsl(0, 78%, 62%);
+    --card-primary: hsl(180, 62%, 55%);
+    --paragraph: hsl(229, 6%, 66%);
+    --card-tertiary: hsl(34, 97%, 64%);
+    --card-quardinary: hsl(212, 86%, 64%);
+}
+
+.main-header {
+    margin: 0 0 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-weight: 200;
+    font-size: 5rem;
+    color: var(--heading);
+    margin-bottom: 5px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin-top: 5rem
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 117px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+.main-heading-2 {
+    margin: 1rem 0 1.5rem;
+    font-size: 4.6rem;
+    color: var(--heading);
+
+}
+
+.paragraph {
+    color: var(--paragraph);
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 40rem;
+    border-radius: 10px;
+    text-align: left;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.29);
+}
+
+.card-1 {
+    border-top: 5px solid var(--card-primary);
+}
+
+.card-heading {
+    color: var(--heading);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.description {
+    color: var(--paragraph);
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    margin-top: 45px;
+    margin-left: auto;
+}
+
+.card-2 {
+    border-top: 5px solid var(--card-secondary);
+    margin-bottom: 5rem;
+}
+
+.card-3 {
+    border-top: 5px solid var(--card-tertiary);
+    margin-top: 5rem;
+}
+
+.card-4 {
+    border-top: 5px solid var(--card-quardinary);
+}
+
+.middle {
+    margin-left: 50px;
+    margin-right: 50px;
+}
